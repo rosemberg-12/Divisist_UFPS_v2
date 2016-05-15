@@ -1,0 +1,1 @@
+<%@page session="true"%><jsp:useBean id="facade" scope="page" class="facade.Fachada" /><jsp:useBean id="est" scope="page" class="dto.Estudiante" /><%=facade.incluir(request.getParameter("id"),request.getSession().getAttribute("codigo").toString())%>
